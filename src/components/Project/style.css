@@ -1,0 +1,20 @@
+.project{
+    border: 1px solid #333;
+    margin: 0 20px;
+}
+
+.project section{
+    display: flex;
+}
+
+.project h1{
+    padding: 5px 10px;
+}
+
+.project h2{
+    padding: 5px 10px;
+}
+
+.project p{
+    padding: 5px 10px;
+}
