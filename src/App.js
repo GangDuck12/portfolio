@@ -10,7 +10,11 @@ function App() {
   return (
     <div className="App">
       <Header></Header>
-      <div className="portrait"></div>
+      <div className="portrait">
+        <div className="imgNote">
+          내용을 입력하세요.
+        </div>
+      </div>
       <div className="contents">
         <Porject></Porject>
         <Skills></Skills>

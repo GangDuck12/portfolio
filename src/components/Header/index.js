@@ -11,10 +11,10 @@ const Header = (props) => {
     <div className="header">
         <a href="#" className="logo">Home</a>
         <ul>
-          <li><a href="#">project</a></li>
-          <li><a href="#">skils</a></li>
-          <li><a href="#">interest</a></li>
-          <li><a href="#">contact</a></li>
+          <li><a href="#project">project</a></li>
+          <li><a href="#skils">skils</a></li>
+          <li><a href="#interest">interest</a></li>
+          <li><a href="#contact">contact</a></li>
         </ul>
     </div>
    )
