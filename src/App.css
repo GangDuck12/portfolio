@@ -3,18 +3,22 @@
   padding: 0;
 }
 
+.App{
+  background: #d2eff7;
+}
+
 .portrait{
-  top: 50px;
-  left: 0;
+  border: 1px solid #333;
   background: url(./img/img.jpg);
   background-size: cover;
   background-position: center;
   padding: 0;
   width: 100%;
-  height: 600px;
+  height: 100vh;
 }
 
 .imgNote{
+  background: rgba(255, 255, 255, 0.1);
   padding: 200px 100px 0 100px;
   text-align: center;
 }
