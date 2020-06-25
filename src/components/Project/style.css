@@ -6,6 +6,7 @@
 .project section{
     display: flex;
     padding: 20px 10px 0 0;
+    height: 100vh;
 }
 
 .project img{
@@ -13,7 +14,7 @@
 }
 
 .project h1{
-    padding: 5px 10px;
+    padding: 50px 10px;
 }
 
 .project h2{
@@ -21,6 +22,14 @@
 }
 
 .project p{
-    padding: 5px 10px;
+    padding: 20px 10px;
 }
 
+@media(max-width:768px){
+    .project section{
+        flex-direction: column;
+    }
+    img{
+        width: 80%;
+    }
+}

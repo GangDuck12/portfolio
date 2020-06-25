@@ -1,6 +1,7 @@
 .skills{
     margin: 0 20px 20px 20px;
     background: #fff;
+    height: 100vh;
 }
 
 .skills section{
@@ -10,7 +11,7 @@
 }
 
 .skills h1{
-    padding: 5px 10px;
+    padding: 50px 10px;
 }
 
 .skills h2{
@@ -19,4 +20,14 @@
 
 .skills p{
     padding: 5px 10px;
+}
+
+@media(max-width:768px){
+    .skills section{
+        padding: 10px;
+    }
+
+    .skills .icon{
+        padding-bottom: 50px;
+    }
 }

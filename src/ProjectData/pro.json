@@ -1,0 +1,22 @@
+{
+    "data" : [
+        {
+            "id": 1,
+            "projectTitle" : "Login Page",
+            "slug": "",
+            "postedOn": "July 21, 2020"
+        },
+        {
+            "id" : 2,
+            "projectTitle": "To Do List",
+            "slug": "",
+            "postedOn": "May 03, 2020"
+        },
+        {
+            "id": 3,
+            "projectTitle": "Cafe Web Design",
+            "slug": "",
+            "postedOn": "Apr 02, 2020"
+        }
+    ]
+}

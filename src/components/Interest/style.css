@@ -1,10 +1,11 @@
 .interest{
     margin: 0 20px 20px 20px;
     background: #fff;
+    height: 100vh;
 }
 
 .interest h1{
-    padding: 5px 10px;
+    padding: 50px 10px;
 }
 
 .interest h2{
@@ -13,4 +14,14 @@
 
 .interest p{
     padding: 5px 10px;
+}
+
+@media(max-width:768px){
+    .interest{
+        height: 300vh;
+    }
+
+    .interest section{
+        height: 100vh;
+    }
 }
