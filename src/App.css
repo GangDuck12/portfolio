@@ -5,11 +5,12 @@
 
 .App{
   background: #d2eff7;
+  overflow: hidden;
 }
 
 .portrait{
   border: 1px solid #333;
-  background: url(./img/img.jpg);
+  background: url(./images/img.jpg);
   background-size: cover;
   background-position: center;
   padding: 0;

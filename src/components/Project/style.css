@@ -1,35 +1,90 @@
 .project{
     margin: 20px;
     background: #fff;
+    height: 100vh;
+}
+
+.projectNav{
+    display: flex;
 }
 
 .project section{
     display: flex;
     padding: 20px 10px 0 0;
-    height: 100vh;
+}
+
+.project .content{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.project .content-overlay{
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    width: 95%;
+    height: 100%;
+    top: 0;
+    left: 20px;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+}
+
+.project .content:hover .content-overlay{
+    opacity: 1;
+}
+
+.project .content-details{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    right: 20%;
+    color: #fff;
+    opacity: 0;
+}
+
+
+.project .content:hover .content-details{
+    opacity: 1;
+}
+
+.project .content-details p{
+    width: 100%;
+    font-size: 1em;
 }
 
 .project img{
     padding: 0 20px;
+    width: 95%;
 }
 
 .project h1{
     padding: 50px 10px;
 }
 
-.project h2{
+.project h3{
     padding: 5px 10px;
+    padding-top: 3rem;
 }
 
 .project p{
     padding: 20px 10px;
 }
 
+
 @media(max-width:768px){
     .project section{
         flex-direction: column;
     }
-    img{
-        width: 80%;
+
+    .project .content-details{
+        top: 15%;
     }
+
+    .project .content-details p{
+        font-size: 70%;
+    }
+
 }

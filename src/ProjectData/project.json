@@ -1,0 +1,28 @@
+{
+    "data" : [
+        {
+            "id": 1,
+            "projectTitle" : "Login Page",
+            "projectOn": "July 21, 2020",
+            "projectImage":"login.png",
+            "projectText":"3개의 컴포넌트를 이용하여 로그인 페이지 구현,react Hook에서의 useState사용",
+            "projectSkills":"JavaScript React CSS"
+        },
+        {
+            "id" : 2,
+            "projectTitle": "To Do List",
+            "projectOn": "May 03, 2020",
+            "projectImage":"tdl.png",
+            "projectText":"컴포넌트를 상황에 맞게 렌더링하여 list 생성, 삭제 기능 구현, list에는 제목,내용,시간을 입력하여 state값에 저장,react memo기능으로 최적화",
+            "projectSkills":"JavaScript React CSS"
+        },
+        {
+            "id": 3,
+            "projectTitle": "Cafe Web Design",
+            "projectOn": "Apr 02, 2020",
+            "projectImage":"cafeweb.png",
+            "projectText":"많은 컴포넌트들을 이용하여 카페웹사이트구현, react-router-dom을 이용한 경로설정, 디스플레이에 따른 반응형웹",
+            "projectSkills":"JavaScript React CSS"
+        }
+    ]
+}

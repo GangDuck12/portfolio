@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import tdl from '../../img/tdl.png';
-import cafeweb from '../../img/cafeweb.png';
-import login from '../../img/login.png';
 import './style.css';
-import project from '../../ProjectData/pro.json'
+import project from '../../ProjectData/project.json'
 
 /**
 * @author
@@ -12,41 +9,50 @@ import project from '../../ProjectData/pro.json'
 
 const Porject = (props) => {
 
-  const[posts, setPosts] = useState([]);
-  const[post, setPost] = useState({
+  const[projs, setProjs] = useState([]);
+  const[proj, setProj] = useState({
     id: "" ,
     projectTitle : "" ,
-    slug: "" ,
-    postedOn: "" 
+    projectOn: "" ,
+    projectImage:"",
+    projectText:"",
+    projectSkills:""
   });
 
-  const[postId, setPostId] = useState('');
 
   useEffect(() => {
-    const posts = project.data;
-    setPosts(posts);
-  },[posts])
+    const projs = project.data;
+    setProjs(projs);
+  },[projs])
 
 
 
   return(
     <div className="project" id="project">
       <h1>Porject</h1>
-      {
-        posts.map(post =>{
-          return(
-            <div className="projectNav">
-              <a key={post.id} href={`/post/${post.id}`}>
-                <h3>{post.projectTitle}</h3>
-                <p>{post.postedOn}</p>
-              </a>
-            </div>
-          )
-        })
-      }
-      <div className="projectContent">
-        <h2>{post.projectTitle}</h2>
-        <p>{post.porjectText}</p>
+      <div className="projectNav">
+        {
+          projs.map(proj =>{
+            return(
+              <div>
+                  <h3>{proj.projectTitle}</h3>
+                  <p>{proj.projectOn}</p>
+                <a key={proj.id} href={`/proj/${proj.id}`}>
+                  <div className="content">
+                    <div className="content-overlay"></div>
+                      <img src={require(`../../images/${proj.projectImage}`)} alt="Project Image"></img>
+                      <div className="emptySpace"></div>
+                      <div className="content-details">
+                        <p>{proj.projectText}</p>
+                        <h5>Project Skills</h5>
+                        <p>{proj.projectSkills}</p>
+                      </div>
+                  </div>
+                </a>
+              </div>
+            )
+          })
+        }
       </div>
     </div>
    )
