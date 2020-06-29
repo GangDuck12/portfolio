@@ -1,23 +1,21 @@
 .header{
     display: flex;
-    justify-content: space-between;
-    border: 1px solid #333;
-    padding: 5px 0 5px 0;
+    flex-direction: column;
+    background: #1a1a1a;
+    /* border: 1px solid #333; */
     position: fixed;
-    width: 100%;
+    height: 100vh;
+    width: 12vw;
 }
 
 .header a{
     text-decoration: none;
-    font-weight: bold;
 }
 
-.header .logo{
-    padding: 0 10px ;
-}
 
 .header ul{
     display: flex;
+    flex-direction: column;
 }
 
 .header ul li{
@@ -25,72 +23,119 @@
     list-style: none;
 }
 
-.header ul li a{
-    padding: 0 10px;
-}
-
-.nav{
-    position: absolute;
-    flex-direction: column;
-    width: 50%;
-    left: 50%;
-    transform: translateY(-200%);
+.logo{
+    /* border: 1px solid red; */
     text-align: center;
-    transition: 0;
-    opacity: 1;
-    top: 50px;
-    background: #fff;
+    padding: 10px 0;
+    font-size: 2em;
+    font-weight: bold;
 }
 
-.nav.active{
-    transform: translateY(0);
-    opacity: 1;
-}
-
-.toggleIn{
-    padding: 0 15px;
-}
-
-.toggle{
-    display: block;
-    width: 30px;
-    height: 30px;
+.logo a{
     position: relative;
-    cursor: pointer;
+    color: #FEFEFE;
+    display: inline-block;
+    overflow: hidden;
+    text-transform: uppercase;
 }
 
-.toggle::before{
-    content:'';
+
+
+.logo a span{
     position: absolute;
-    top: 4px;
+    display: block;
+}
+
+.logo a span:nth-child(1){
+    top: 0;
+    left: -100%;
     width: 100%;
     height: 2px;
-    background: #d2eff7;
-    z-index: 1;
-    box-shadow: 0 10px 0 #d2eff7;
-    transition: 0.5s;
+    background: linear-gradient(90deg,transparent,#2196f3);
 }
 
-.toggle::after{
-    content:'';
-    position: absolute;
-    bottom: 4px;
+.logo a:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+
+.logo a span:nth-child(3){
+    bottom: 0;
+    right: -100%;
     width: 100%;
     height: 2px;
-    background: #d2eff7;
-    z-index: 1;
-    box-shadow: 0 0 0 #d2eff7;
-    transition: 0.5s;
+    background: linear-gradient(270deg,transparent,#2196f3);
 }
 
-.toggle.active::before{
-    top: 14px;
-    transform: rotate(45deg);
-    box-shadow: 0 0 0 #d2eff7;
+.logo a:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
 }
 
-.toggle.active::after{
-    bottom: 14px;
-    transform: rotate(-45deg);
-    box-shadow: 0 0 0 #d2eff7;
+.logo a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#2196f3);
+}
+
+.logo a:hover span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.logo a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#2196f3);
+}
+
+.logo a:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+/* ///// */
+.lists{
+    display: flex;
+    flex-direction: column;
+}
+.lists li{
+    margin: 2.5em 0;
+    font-weight: bold;
+}
+
+.lists li a{
+    display: block;
+    width: 100%;
+    padding: 0.5em;
+}
+
+.lists li:nth-child(1) a{
+    color: #0033FF;
+}
+.lists li:nth-child(2) a{
+    color: #FFFF00;
+}
+.lists li:nth-child(3) a{
+    color: #FF0000;
+}
+.lists li:nth-child(4) a{
+    color: #00FF00;
+}
+
+.lists li a:hover{
+    background: #2b2d2e;
+}
+
+.lists li .desc{
+    font-weight: lighter;
+    font-size: 0.7em;
+    color: #fff;
+    padding: 0.5em;
 }

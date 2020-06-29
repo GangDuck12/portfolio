@@ -1,0 +1,9 @@
+.home{
+    padding: 10vh 0;
+}
+.portrait{
+    background: url(../../images/img.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 80vh;
+}

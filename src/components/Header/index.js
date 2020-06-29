@@ -7,29 +7,48 @@ import './style.css';
 **/
 
 const Header = (props) => {
+  console.log('Header render');
 
-  const[toggleOn,setToggle] = useState(false);
-
-  const toggle = () => {
-    setToggle(!toggleOn);
+  let lists = [];
+  let data = props.data;
+  let i = 0;
+  while(i < data.length){
+    lists.push(
+      <li key={data[i].id}>
+        <a href={'./contents/'+data[i].id} data-id={data[i].id} onClick={function(e){
+          e.preventDefault();
+          props.onChangePage(e.target.dataset.id);
+        }}>{data[i].title}
+        </a>
+        <div className="desc">
+          {data[i].desc}
+        </div>
+      </li>);
+    i = i + 1;
   }
-
-
-  const toggleClass = toggleOn? 'toggle active' : 'toggle';
-  const navClass = toggleOn? 'nav active' : 'nav';
 
   return(
     <div className="header">
-        <a href="#" className="logo">Home</a>
-        <ul className={navClass}>
-          <li><a href="#project"onClick={toggle}>project</a></li>
-          <li><a href="#skils" onClick={toggle}>skils</a></li>
-          <li><a href="#interest" onClick={toggle}>interest</a></li>
-          <li><a href="#contact" onClick={toggle}>contact</a></li>
+        <ul>
+          <div className="logo">
+            <a 
+              href="#" 
+              onClick={function(e){
+                e.preventDefault();
+                props.onChangeMode();
+              }}
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                GangDuck
+            </a>
+          </div>
+          <div className="lists">
+            {lists}
+          </div>
         </ul>
-        <div className="toggleIn">
-          <div className={toggleClass} onClick={toggle}></div>
-        </div>
     </div>
    )
 

@@ -4,10 +4,10 @@ import project from '../../ProjectData/project.json'
 
 /**
 * @author
-* @function Porject
+* @function Project
 **/
 
-const Porject = (props) => {
+const Project = (props) => {
 
   const[projs, setProjs] = useState([]);
   const[proj, setProj] = useState({
@@ -29,15 +29,15 @@ const Porject = (props) => {
 
   return(
     <div className="project" id="project">
-      <h1>Porject</h1>
+      <h1>Project</h1>
       <div className="projectNav">
         {
           projs.map(proj =>{
             return(
-              <div>
+              <div key={proj.id}>
                   <h3>{proj.projectTitle}</h3>
                   <p>{proj.projectOn}</p>
-                <a key={proj.id} href={`/proj/${proj.id}`}>
+                <a href={`/proj/${proj.id}`}>
                   <div className="content">
                     <div className="content-overlay"></div>
                       <img src={require(`../../images/${proj.projectImage}`)} alt="Project Image"></img>
@@ -59,4 +59,4 @@ const Porject = (props) => {
 
  }
 
-export default Porject
+export default Project
