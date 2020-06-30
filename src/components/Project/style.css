@@ -1,7 +1,58 @@
 .project{
-    background: #fff;
     padding: 10vh 0;
     height: 80vh;
+}
+
+.line-x1{
+    border-top: 3px solid #999999;
+    position: absolute;
+    width: 86vw;
+    top: 20vh;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+.line-x2{
+    border-top: 3px solid #999999;
+    position: absolute;
+    width: 60vw;
+    top: 50vh;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+.line-y1{
+    border-left: 3px solid #999999;
+    position: absolute;
+    top: -20vh;
+    height: 100vh;
+    left: 35vw;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+.line-y4{
+    border-left: 3px solid #999999;
+    position: absolute;
+    top: -5vh;
+    height: 120vh;
+    left: 55vw;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+.line-y2{
+    border-left: 3px solid #999999;
+    position: absolute;
+    height: 90vh;
+    left: 70vw;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+.line-y3{
+    border-left: 3px solid #999999;
+    position: absolute;
+    top: -20vh;
+    height: 130vh;
+    left: 15vw;
+    transform: rotate(45deg);
+    z-index: -1;
 }
 
 .projectNav{
@@ -21,15 +72,16 @@
 }
 
 .project .content-overlay{
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.8);
     position: absolute;
-    width: 95%;
+    width: 86%;
     height: 100%;
     top: 0;
     left: 20px;
     right: 0;
     bottom: 0;
     opacity: 0;
+    transition: 1s;
 }
 
 .project .content:hover .content-overlay{
@@ -38,8 +90,8 @@
 
 .project .content-details{
     position: absolute;
-    top: 20%;
-    left: 20%;
+    top: 15%;
+    left: 10%;
     right: 20%;
     color: #fff;
     opacity: 0;
@@ -61,7 +113,7 @@
 }
 
 .project h1{
-    padding: 50px 10px;
+    padding: 10px;
 }
 
 .project h3{

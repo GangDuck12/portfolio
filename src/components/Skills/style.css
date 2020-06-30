@@ -7,6 +7,7 @@
 .skills section{
     display: flex;
     justify-content: center;
+    height: 20vh;
 }
 
 .skills .content-skills1{
@@ -17,12 +18,14 @@
 
 
 .skills .section1{
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.9);
     position: absolute;
     width: 100%;
     height: 100%;
     opacity: 0;
+    transition: 1.5s;
 }
+
 
 .content-skills1:hover .section1{
     opacity: 1;
@@ -35,11 +38,12 @@
 }
 
 .skills .section2{
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.9);
     position: absolute;
     width: 100%;
     height: 100%;
     opacity: 0;
+    transition: 1.5s;
 }
 
 .content-skills2:hover .section2{
@@ -56,9 +60,9 @@
 
 .skills p{
     position: absolute;
+    text-align: center;
     top: 30%;
-    left: 35%;
-    right: 35%;
+    width: 100%;
     opacity: 0;
     color: #fff;
 }

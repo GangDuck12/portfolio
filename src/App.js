@@ -22,7 +22,10 @@ function App() {
 
   console.log('select_id',selected_content_id);
 
-  let content = <Home></Home>;
+  // let content = <Home></Home>;
+  // let content = <Project />;
+    // let content =<Skills></Skills>;
+    let content =<Interest></Interest>;
 
   if(selected_content_id === 0){
         content = <Home></Home>

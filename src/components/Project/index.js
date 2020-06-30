@@ -29,6 +29,12 @@ const Project = (props) => {
 
   return(
     <div className="project" id="project">
+      <div className="line-x1"></div>
+      <div className="line-x2"></div>
+      <div className="line-y1"></div>
+      <div className="line-y4"></div>
+      <div className="line-y2"></div>
+      <div className="line-y3"></div>
       <h1>Project</h1>
       <div className="projectNav">
         {
@@ -37,7 +43,7 @@ const Project = (props) => {
               <div key={proj.id}>
                   <h3>{proj.projectTitle}</h3>
                   <p>{proj.projectOn}</p>
-                <a href={`/proj/${proj.id}`}>
+                <a href="#">
                   <div className="content">
                     <div className="content-overlay"></div>
                       <img src={require(`../../images/${proj.projectImage}`)} alt="Project Image"></img>

@@ -27,7 +27,7 @@ const Skills = (props) => {
               <img src={REACT}></img>
             </div>
           </section>
-            <p>주로 react를 프레임워크로 사용하여 css로 디자인합니다.</p>
+            <p>주로 <img className="img-react" src={REACT}></img>를 프레임워크로 사용하여 <img className="img-css" src={CSS}></img>로 디자인합니다.</p>
         </div>
         <div className="content-skills2">
             <section>
@@ -38,7 +38,7 @@ const Skills = (props) => {
                 <img src={GITHUB}></img>
               </div>
             </section>
-            <p>프로젝트들의 버전관리를 위하여 git을 사용합니다.</p>
+            <p>프로젝트들의 버전관리를 위하여 <img src={GIT}></img>을 사용합니다.</p>
         </div>
     </div>
    )
