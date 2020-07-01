@@ -29,30 +29,28 @@ const Project = (props) => {
 
   return(
     <div className="project" id="project">
-      <div className="line-x1"></div>
-      <div className="line-x2"></div>
-      <div className="line-y1"></div>
-      <div className="line-y4"></div>
-      <div className="line-y2"></div>
-      <div className="line-y3"></div>
-      <h1>Project</h1>
+      <div className="project-background">
+        <h1>Project</h1>
+      </div>
       <div className="projectNav">
         {
           projs.map(proj =>{
             return(
               <div key={proj.id}>
-                  <h3>{proj.projectTitle}</h3>
-                  <p>{proj.projectOn}</p>
                 <a href="#">
-                  <div className="content">
-                    <div className="content-overlay"></div>
-                      <img src={require(`../../images/${proj.projectImage}`)} alt="Project Image"></img>
-                      <div className="emptySpace"></div>
-                      <div className="content-details">
-                        <p>{proj.projectText}</p>
-                        <h5>Project Skills</h5>
-                        <p>{proj.projectSkills}</p>
+                  <div className="project-container">
+                    <h3>{proj.projectTitle}</h3>
+                    <p>{proj.projectOn}</p>
+                    <div className="project-card">
+                      <div className="img-box">
+                        <img src={require(`../../images/${proj.projectImage}`)} alt="Project Image"></img>
                       </div>
+                        <div className="content-details">
+                          <p>{proj.projectText}</p>
+                          <h5>Project Skills</h5>
+                          <p>{proj.projectSkills}</p>
+                        </div>
+                  </div>
                   </div>
                 </a>
               </div>

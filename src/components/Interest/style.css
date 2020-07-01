@@ -1,20 +1,21 @@
 .interest{
-    background: #fff;
-    padding: 10vh 0;
-    height: 80vh;
+    background: url(../../images/interest-background-img.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color: #ffffff;
+}
+
+.interest-background{
+    background: rgba(0, 0, 0, 0.7);
+    width: 88vw;
+    height: 100vh;
 }
 
 .interest h1{
     padding: 50px 10px;
 }
 
-.interest h2{
-    padding: 5px 10px;
-}
-
-.interest p{
-    padding: 5px 10px;
-}
 
 .interest img{
     width: 30px;

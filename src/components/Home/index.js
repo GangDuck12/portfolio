@@ -12,8 +12,6 @@ const Home = (props) => {
       <div className="profile">
         Software developer specialization in Front end developement...
       </div>
-      <div className="portrait">
-      </div>
       <div className="stage">
         <div className="cubespinner">
           <div className="face1">Be</div>
@@ -23,9 +21,9 @@ const Home = (props) => {
           <div className="face5">Be</div>
           <div className="face6">Confident</div>
         </div>
+      </div>
         <div className="bottomline"></div>
         <div className="rightline"></div>
-      </div>
     </div>
    )
 

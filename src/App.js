@@ -24,8 +24,8 @@ function App() {
 
   // let content = <Home></Home>;
   // let content = <Project />;
-    // let content =<Skills></Skills>;
-    let content =<Interest></Interest>;
+    let content =<Skills></Skills>;
+    // let content =<Interest></Interest>;
 
   if(selected_content_id === 0){
         content = <Home></Home>
