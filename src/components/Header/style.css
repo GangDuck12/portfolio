@@ -117,13 +117,13 @@
 }
 
 .lists li:nth-child(1) a{
-    color: #0033FF;
+    color: #FF0000;
 }
 .lists li:nth-child(2) a{
-    color: #FFFF00;
+    color: #0033FF;
 }
 .lists li:nth-child(3) a{
-    color: #FF0000;
+    color: #FFFF00;
 }
 .lists li:nth-child(4) a{
     color: #00FF00;

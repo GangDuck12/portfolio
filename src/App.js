@@ -3,7 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import Project from './components/Project';
 import Skills from './components/Skills';
-import Interest from './components/Interest';
+import About from './components/About';
 import Contact from './components/Contact';
 import { BrowserRouter as Router, Route} from 'react-router-dom';
 import Home from './components/Home';
@@ -14,27 +14,27 @@ function App() {
 
   const [selected_content_id,setSelected_content_id] = useState();
   const [contents,setContents] = useState([
-    {id:1, title:'Project', desc:'Login page To do list & Cafe Web Design'},
-    {id:2, title:'Skills', desc:'Mainly used & Knowledgeable'},
-    {id:3, title:'Interest', desc:'What I want to do...'},
+    {id:1, title:'About', desc:'What I want to do...'},
+    {id:2, title:'Project', desc:'Login page To do list & Cafe Web Design'},
+    {id:3, title:'Skills', desc:'Mainly used & Knowledgeable'},
     {id:4, title:'Contact', desc:'Thank you...'}
   ]);
 
   console.log('select_id',selected_content_id);
 
   // let content = <Home></Home>;
-  // let content = <Project />;
-    let content =<Skills></Skills>;
-    // let content =<Interest></Interest>;
+  // let content =<About></About>;
+  let content = <Project />;
+    // let content =<Skills></Skills>;
 
   if(selected_content_id === 0){
         content = <Home></Home>
       }else if(selected_content_id === 1){
-        content = <Project></Project>
+        content = <About></About>
       }else if(selected_content_id === 2){
-        content = <Skills></Skills>
+        content = <Project></Project>
       }else if(selected_content_id === 3){
-        content = <Interest></Interest>
+        content = <Skills></Skills>
       }else if(selected_content_id === 4){
         content = <Contact></Contact>
       }

@@ -11,7 +11,7 @@
 }
 
 .skills section{
-    /* border: 1px solid yellow; */
+    border: 1px solid yellow;
 }
 
 .mainly-overlay{
@@ -19,11 +19,11 @@
     border: 1px solid red;
     position: absolute;
     width: 88vw;
-    height: 15vh;
+    height: 12vh;
     opacity: 0;
 }
 
-.skills .content-skills1{
+.skills .content-mainly{
     position: relative;
     overflow: hidden;
     height: 20vh;
@@ -37,17 +37,17 @@
 .skills .mainly-details{
     position: absolute;
     width: 88vw;
-    height: 15vh;
+    height: 12vh;
     color: #ffffff;
     opacity: 0;
     /* transition: 1.5s; */
 }
 
-.content-skills1:hover .mainly-overlay{
+.content-mainly:hover .mainly-overlay{
     opacity: 1;
 }
 
-.mainly-overlay:hover .mainly-details{
+.content-mainly:hover .mainly-details{
     opacity: 1;
     position: relative;
     display: table-cell;
@@ -59,16 +59,17 @@
     color: #fff;
 }
 /* //// */
+
 .know-overlay{
     background: rgba(0, 0, 0, 1);
     border: 1px solid red;
     position: absolute;
     width: 88vw;
-    height: 20vh;
+    height: 12vh;
     opacity: 0;
 }
 
-.skills .content-skills2{
+.skills .content-know{
     position: relative;
     overflow: hidden;
     height: 20vh;
@@ -82,17 +83,17 @@
 .skills .know-details{
     position: absolute;
     width: 88vw;
-    height: 20vh;
+    height: 12vh;
     color: #ffffff;
     opacity: 0;
     /* transition: 1.5s; */
 }
 
-.content-skills2:hover .know-overlay{
+.content-know:hover .know-overlay{
     opacity: 1;
 }
 
-.know-overlay:hover .know-details{
+.content-know:hover .know-details{
     opacity: 1;
     position: relative;
     display: table-cell;
@@ -103,36 +104,55 @@
     color: #fff;
 }
 
-.skills .interest-details{
+
+/* //// */
+
+.interest-overlay{
     background: rgba(0, 0, 0, 1);
+    border: 1px solid red;
     position: absolute;
     width: 88vw;
-    height: 40vh;
-    /* border: 1px solid red; */
-    text-align: center;
-    /* opacity: 0; */
-    color: #fff;
-    /* transition: 1.5s; */
+    height: 12vh;
+    opacity: 0;
 }
-
-.skills-table{
-    border: 1px solid yellow;
-}
-
-/* .skills section:hover .skills-details{
-    opacity: 1;
-} */
-
-
 
 .skills .content-interest{
     position: relative;
     overflow: hidden;
+    height: 20vh;
     width: 100vw;
-    height: 40vh;
     display: table-cell;
     vertical-align: middle;
     text-align: center;
+    opacity: 1;
+}
+
+.skills .interest-details{
+    position: absolute;
+    width: 88vw;
+    height: 12vh;
+    color: #ffffff;
+    opacity: 0;
+    /* transition: 1.5s; */
+}
+
+.interest-details ul li{
+    list-style: none;
+}
+
+.content-interest:hover .interest-overlay{
+    opacity: 1;
+}
+
+.content-interest:hover .interest-details{
+    opacity: 1;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.interest-details p{
+    color: #fff;
 }
 
 
@@ -146,16 +166,6 @@
     color: #fff;
 }
 
-/* .content-skills1:hover p{
-    opacity: 1;
-}
-.content-skills2:hover p{
-    opacity: 1;
-}
-.content-interest:hover ul li{
-    opacity: 1;
-    color: #ffffff;
-} */
 
 .skills img{
     background: #ffffff;

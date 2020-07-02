@@ -22,7 +22,7 @@ const Skills = (props) => {
       <div className="skills-background">
         <h1>Skills</h1>
             <section>
-              <div className="content-skills1">  
+              <div className="content-mainly">  
                 <div className="mainly-overlay">
                   <div className="mainly-details">
                     <p>주로 <span>REACT</span>를 프레임워크로 사용하여 <span>CSS</span>로 디자인합니다.</p>
@@ -36,7 +36,7 @@ const Skills = (props) => {
               </div>
             </section>
             <section>
-              <div className="content-skills2">
+              <div className="content-know">
                 <div className="know-overlay">
                   <div className="know-details">
                     <p>프로젝트들의 버전관리를 위하여 <span>GIT</span>을 사용합니다.</p>
@@ -48,22 +48,22 @@ const Skills = (props) => {
               </div>
             </section>
             <section>
-                <div className="interest-details">
-                  <ul>
-                    <li>안정성과 확장성</li>
-                    <li>React 렌더링 테스팅</li>
-                    <li>효과적인 React활용</li>
-                    <li>사용자 경험까지 개선</li>
-                  </ul>
-                </div>
               <div className="content-interest">
-                
+                <div className="interest-overlay">
+                  <div className="interest-details">
+                    <ul>
+                      <li>안정성과 확장성</li>
+                      <li>React 렌더링 테스팅</li>
+                      <li>효과적인 React활용</li>
+                      <li>사용자 경험까지 개선</li>
+                    </ul>
+                  </div>
+                </div>
                   <h2>Interest</h2>
                   <img src={TypeScript}></img>
                   <img src={Jest}></img>
                   <img src={Webpack}></img>
                   <img src={Ux}></img>
-                
               </div>
             </section>
       </div>

@@ -24,10 +24,22 @@
     padding-top: 20vh;
     width: auto;
     display: flex;
+    animation:  fadeinup 1s ease-in-out;
 }
 
+@keyframes fadeinup{
+    0%{
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 .projectNav a{
     text-decoration: none;
+    color: #ffffff;
 }
 
 .project-container{
@@ -52,7 +64,7 @@
 }
 
 .project-card:hover{
-    height: 420px;
+    height: 400px;
 }
 
 .project .img-box{
@@ -68,6 +80,7 @@
 .project .img-box img{
     max-width: 100%;
     border-radius: 4px;
+    border: 1px solid #ffffff;
 }
 
 .project-card .content-details{
