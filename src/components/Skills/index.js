@@ -21,8 +21,8 @@ const Skills = (props) => {
     <div className="skills" id="skills">
       <div className="skills-background">
         <h1>Skills</h1>
-            <section>
-              <div className="content-mainly">  
+            <section> 
+              <div className="content-mainly">
                 <div className="mainly-overlay">
                   <div className="mainly-details">
                     <p>주로 <span>REACT</span>를 프레임워크로 사용하여 <span>CSS</span>로 디자인합니다.</p>

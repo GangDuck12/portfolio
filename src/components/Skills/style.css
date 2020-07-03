@@ -9,9 +9,9 @@
     background: rgba(0, 0, 0, 0.8);
     height: 100vh;
 }
-
 .skills section{
     border: 1px solid yellow;
+    animation: fadein 4s ease-in-out;
 }
 
 .mainly-overlay{
@@ -171,6 +171,16 @@
     background: #ffffff;
     width: 50px;
 }
+
+@keyframes fadein{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 @media(max-width:768px){
     .skills{
         height: auto;

@@ -17,6 +17,7 @@
 }
 
 .about-details{
+    animation: fadein 2s ease-in-out;
     padding: 0 100px;
     display: flex;
     flex-direction: row;
@@ -129,7 +130,7 @@
 }
 
 .about-details p{
-    animation: fadein 2s ease-in-out;
+    animation: fadein 4s ease-in-out;
     padding: 0 20px;
 }
 

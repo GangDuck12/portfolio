@@ -9,12 +9,21 @@ import './style.css';
 const Contact = (props) => {
   return(
     <div className="contact" id="contact">
-      <h1>contact</h1>
-        <ul>
-          <li>phone</li>
-          <li>email</li>
-          <li></li>
-        </ul>
+      <div className="contact-overlay"></div>
+      <h1>Contact</h1>
+      <div className="contact-content">
+        <section></section>
+        <section>
+          <div className="contact-details">
+            <h2>Thank you for...</h2>
+              <ul>
+                <li>phone:<span>010.9424.9977</span></li>
+                <li>maill:<span>gangduck12@gmail.com</span></li>
+                <li>Github:<span>https://github.com/GangDuck12/</span></li>
+              </ul>
+          </div>
+        </section>
+      </div>
     </div>
    )
 
