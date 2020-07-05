@@ -8,17 +8,18 @@
 
 .about-background{
     background: rgba(0, 0, 0, 0.7);
-    width: 88vw;
+    width: calc(100vw - 180px);
     height: 100vh;
 }
 
 .about h1{
     padding: 50px 10px;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .about-details{
     animation: fadein 2s ease-in-out;
-    padding: 0 100px;
+    padding: 0 5vw;
     display: flex;
     flex-direction: row;
 }
@@ -26,6 +27,7 @@
 .about-details h3{
     font-size: 2em;
     padding-bottom: 10px;
+    font-family: 'Noto Sans', sans-serif;
 }
 .about-details h4{
     font-size: 1em;
@@ -34,11 +36,13 @@
     padding-left: 10px;
     padding-bottom: 13px;
     border-bottom: 2px solid red;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .about-details section p{
     font-size: 1em;
     padding: 20px 5%;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .about-details section:nth-child(1) ul{
@@ -55,7 +59,7 @@
     padding: 3% 4%;
 }
 
-.about-details:hover .about-overlay{
+.about-details section:hover .about-overlay{
     opacity: 1;
     transition: all 0.3s ease-in-out;
     top: 0%;
@@ -99,11 +103,11 @@
     transition: 0.5s ease-in-out;
 }
 
-.about-details:hover .about-left{
+.about-details section:hover .about-left{
     background: rgba(0, 0, 0, 0.7);
 }
 
-.about-details:hover .about-left ul li{
+.about-details section:hover .about-left ul li{
     color: #777777;
 }
 
@@ -130,7 +134,7 @@
 }
 
 .about-details p{
-    animation: fadein 4s ease-in-out;
+    animation: fadein 2s ease-in-out;
     padding: 0 20px;
 }
 
@@ -143,5 +147,53 @@
     width: 30px;
 }
 
+@media(max-width:1024px){
+    .about h1{
+        padding-bottom: 10px;
+    }
+    .about-details{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .about-details section{
+        height: 300px;
+    }
+
+    .about-details section:nth-child(2){
+        height: 250px;
+    }
+
+    .about-bottom{
+        height: 300px;
+    }
+    .about-overlay{
+        height: 300px;
+    }
+    .about-left{
+        height: 250px;
+        padding: 10% 4%;
+    }
+    
+    .about-details h3{
+        font-size: 1.8em;
+    }
+    .about-details h4{
+        font-size: 0.8em;
+    }
+
+    .about-details section p{
+        font-size: 0.8em;
+    }
+}
 @media(max-width:768px){
+    .about h1{
+        padding: 10px 50px;
+    }  
+    .about-background{
+        width: 100vw;
+    }
+    .about-details section{
+        width: 70vw;
+    }
 }

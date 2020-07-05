@@ -47,7 +47,7 @@ const Project = (props) => {
                       </div>
                         <div className="content-details">
                           <p>{proj.projectText}</p>
-                          <h5>Project Skills</h5>
+                          <h4>Project Skills</h4>
                           <p>{proj.projectSkills}</p>
                         </div>
                   </div>

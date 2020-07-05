@@ -7,7 +7,7 @@
 
 .contact-overlay{
     position: absolute;
-    width: 88vw;
+    width: calc(100vw - 180px);
     height: 100vh;
     background: rgba(0, 0, 0, 0.5);
     clip-path: polygon( 100% 100%, 100% 0, 50% 0, 30% 100% );
@@ -16,6 +16,7 @@
 .contact h1{
     padding: 50px 10px;
     color: #ffffff;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .contact-content{
@@ -38,6 +39,7 @@
 .contact-details h2{
     padding: 5%;
     color: #ffffff;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .contact-details ul{
@@ -60,6 +62,9 @@
     100%{opacity: 1;}
 }
 
-@media(max-width:768px){
+@media(max-width:1024px){
     
+}
+@media(max-width:768px){
+
 }

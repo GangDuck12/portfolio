@@ -4,20 +4,25 @@
     background: url(../../images/img.jpg);
     background-size: cover;
     background-position: center;
+    font-family: 'Noto Sans', sans-serif;
 }
 .profile{
-    width: 88vw;
-    font-size: 2em;
+    width: calc(100vw - 180px);
     background: rgba(0, 0, 0, 0.8);
-    color: #ffffff;
     text-align: center;
+    align-items: center;
     padding-top: 30vh;
+}
+
+.profile p{
+    color: #ffffff;
+    font-size: 2em;
 }
 
 .bottomline{
     border-top: 3px solid #999999;
     position: absolute;
-    width: 88vw;
+    width: calc(100vw - 180px);
     bottom: 8vh;
 }
 
@@ -29,8 +34,6 @@
 }
 
 .stage{
-    /* width: 5em;
-    height: 5em; */
     position: absolute;
     margin-top: 60vh;
     margin-left: 70vw; 
@@ -113,45 +116,99 @@
 }
 
 .cubespinner .face1{
-    color: cadetblue;
+    color: #5f9ea0;
     -webkit-transform: translateZ(3em);
     -moz-transform: translateZ(3em);
     -ms-transform: translateZ(3em);
     transform: translateZ(3em);
 }
 .cubespinner .face2{
-    color: forestgreen;
+    color: #228b22;
     -webkit-transform: rotateY(90deg) translateZ(3em);
     -moz-transform: rotateY(90deg) translateZ(3em);
     -ms-transform: rotateY(90deg) translateZ(3em);
     transform: rotateY(90deg) translateZ(3em);
 }
 .cubespinner .face3{
-    color: blue;
+    color: #0000ff;
     -webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(3em);
     -moz-transform: rotateY(90deg) rotateX(90deg) translateZ(3em);
     -ms-transform: rotateY(90deg) rotateX(90deg) translateZ(3em);
     transform: rotateY(90deg) rotateX(90deg) translateZ(3em);
 }
 .cubespinner .face4{
-    color: orange;
+    color: #ffa600;
     -webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(3em);
     -moz-transform: rotateY(180deg) rotateZ(90deg) translateZ(3em);
     -ms-transform: rotateY(180deg) rotateZ(90deg) translateZ(3em);
     transform: rotateY(180deg) rotateZ(90deg) translateZ(3em);
 }
 .cubespinner .face5{
-    color: red;
+    color: #ff0000;
     -webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(3em);
     -moz-transform: rotateY(-90deg) rotateZ(90deg) translateZ(3em);
     -ms-transform: rotateY(-90deg) rotateZ(90deg) translateZ(3em);
     transform: rotateY(-90deg) rotateZ(90deg) translateZ(3em);
 }
 .cubespinner .face6{
-    color: darkslategray;
+    color: #2f4f4f;
     -webkit-transform: rotateX(-90deg) translateZ(3em);
     -moz-transform: rotateX(-90deg) translateZ(3em);
     -ms-transform: rotateX(-90deg) translateZ(3em);
     transform: rotateX(-90deg) translateZ(3em);
 }
 
+@media(max-width:1220px){
+    .stage{
+        position: absolute;
+        margin-top: 60vh;
+        margin-left: 60vw; 
+        /* 위치조정 */
+    }
+}
+
+@media(max-width:1024px){
+    
+}
+@media(max-width:920px){
+    .stage{
+        position: absolute;
+        margin-top: 70vh;
+        margin-left: 50vw; 
+        /* 위치조정 */
+    }
+}
+                               
+@media(max-width:768px){
+    .home{
+        height: 100vh;
+    }
+    .profile{
+        width: 100vw;
+        background: rgba(0, 0, 0, 0.8);
+        text-align: center;
+        align-items: center;
+        padding-top: 30vh;
+    }
+
+    .profile p{
+        font-size: 1.5em;
+        color: #ffffff;
+        padding: 0 20px;
+    }
+
+    .bottomline{
+        display: none;
+    }
+
+    .rightline{
+        display: none;
+    }
+
+    .stage{
+        position: absolute;
+        margin-top: 60vh;
+        margin-left: 70vw; 
+        /* 위치조정 */
+    }
+}

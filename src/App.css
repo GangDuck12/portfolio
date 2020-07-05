@@ -5,5 +5,16 @@
 }
 
 .content{
-  margin-left: 12vw;
+  margin-left: 180px;
+}
+
+
+@media(max-width:1024px){
+    
+}
+@media(max-width:768px){  
+  .content{
+    margin-left: 0;
+    margin-top: 96px;
+  }
 }

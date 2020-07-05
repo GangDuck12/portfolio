@@ -4,11 +4,12 @@
     background: #1a1a1a;
     position: fixed;
     height: 100vh;
-    width: 12vw;
+    width: 180px;
 }
 
 .header a{
     text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 
@@ -20,6 +21,7 @@
 .header ul li{
     display: inline-block;
     list-style: none;
+    font-family: 'Darker Grotesque', sans-serif;
 }
 
 .logo{
@@ -139,4 +141,39 @@
     color: #fff;
     padding: 0.5em;
     overflow: hidden;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+@media(max-width:1024px){
+    
+}
+@media(max-width:768px){
+    .header{
+        top: 0;
+        background: #1a1a1a;
+        position: fixed;
+        height: 96px;
+        width: 100vw;
+    }
+    
+    .header ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* ///// */
+    .lists{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-top: 1px solid #777777;
+        padding: 0 50px;
+    }
+    .lists li{
+        margin: 0;
+    }
+    .lists li .desc{
+        display: none;
+    }
+
 }
