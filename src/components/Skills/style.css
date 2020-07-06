@@ -43,7 +43,7 @@
     opacity: 0;
 }
 
-.skills .content-mainly{
+.content-mainly{
     position: relative;
     overflow: hidden;
     height: 20vh;
@@ -54,7 +54,7 @@
     opacity: 1;
 }
 
-.skills .mainly-details{
+.mainly-details{
     position: absolute;
     width: 88vw;
     height: 12vh;
@@ -90,7 +90,7 @@
     opacity: 0;
 }
 
-.skills .content-know{
+.content-know{
     position: relative;
     overflow: hidden;
     height: 20vh;
@@ -101,7 +101,7 @@
     opacity: 1;
 }
 
-.skills .know-details{
+.know-details{
     position: absolute;
     width: 88vw;
     height: 12vh;
@@ -134,11 +134,11 @@
     border: 1px solid red;
     position: absolute;
     width: 88vw;
-    height: 12vh;
+    height: 14vh;
     opacity: 0;
 }
 
-.skills .content-interest{
+.content-interest{
     position: relative;
     overflow: hidden;
     height: 20vh;
@@ -149,7 +149,7 @@
     opacity: 1;
 }
 
-.skills .interest-details{
+.interest-details{
     position: absolute;
     width: 88vw;
     height: 12vh;
@@ -191,8 +191,14 @@
 }
 @media(max-width:768px){
     .skills{
+        padding-top: 96px;
         height: auto;
     }
+    .skills h1{
+        padding: 10px 50px;
+        padding-bottom: 20px;
+    }
+
     .skills section{
         padding: 10px;
     }
@@ -201,8 +207,28 @@
         padding-bottom: 50px;
     }
 
-    .skills p{
-        font-size: 70%;
+    .mainly-overlay{
+        height: 14vh;
+        width: 100%;
     }
+    .mainly-details{
+        width: 100vw;
+    }
+    
+    .know-overlay{
+        width: 100%;
+        height: 14vh;
+    }
+    .know-details{
+        width: 100vw;
+    }
+
+    .interest-overlay{
+        width: 100%;
+    }
+    .interest-details{
+        width: 100vw;
+    }
+
 
 }

@@ -187,6 +187,9 @@
     }
 }
 @media(max-width:768px){
+    .about{
+        padding-top: 96px;
+    }
     .about h1{
         padding: 10px 50px;
     }  

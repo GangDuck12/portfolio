@@ -26,12 +26,12 @@
 }
 
 .contact section:nth-child(1){
-    width: 100vw;
+    width: 50%;
     height: 50vh;
 }
 
 .contact section:nth-child(2){
-    width: 100%;
+    width: 500px;
     height: 50vh;
 }
 
@@ -49,7 +49,7 @@
 .contact-details ul li{
     list-style: none;
     color: #999999;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     padding: 4%;
 }
 
@@ -63,8 +63,27 @@
 }
 
 @media(max-width:1024px){
-    
+    .contact-overlay{
+        clip-path: polygon( 100% 100%, 100% 0, 40% 0, 20% 100% );
+    }
+    .contact section:nth-child(1){
+        width: 40%;
+    }
+    .contact-details ul li{
+        letter-spacing: 2px;
+    }
+
 }
 @media(max-width:768px){
-
+    .contact{
+        padding-top: 96px;
+    }
+    .contact h1{
+        padding: 10px 50px;
+        padding-bottom: 80px;
+    }
+    .contact-overlay{
+        width: 100%;
+        height: calc(100% - 96px);
+    }
 }

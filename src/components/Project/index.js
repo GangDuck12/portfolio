@@ -37,7 +37,6 @@ const Project = (props) => {
           projs.map(proj =>{
             return(
               <div key={proj.id}>
-                <a href="#">
                   <div className="project-container">
                     <h3>{proj.projectTitle}</h3>
                     <p>{proj.projectOn}</p>
@@ -52,7 +51,6 @@ const Project = (props) => {
                         </div>
                   </div>
                   </div>
-                </a>
               </div>
             )
           })

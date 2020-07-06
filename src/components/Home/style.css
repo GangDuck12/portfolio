@@ -181,6 +181,7 @@
                                
 @media(max-width:768px){
     .home{
+        padding-top: 96px;
         height: 100vh;
     }
     .profile{
