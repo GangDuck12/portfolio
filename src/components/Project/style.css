@@ -165,10 +165,41 @@
         width: 100%;
     }
     .project h1{
-        padding: 10px 50px;
+        padding: 10px 30px;
+        font-size: 1.5em;
     }
     .projectNav{
-        padding-top: 80px;
+        padding-top: 50px;
+    }
+    
+    .project .img-box{
+        max-width: 300px;
+        height: 100px;
+    }
+}
+@media(max-width:425px){
+    
+    .project-card{
+        max-width: 300px;
+        height: 150px;
+    }
+    .project-card:hover{
+        height: 150px;
     }
 
+    .project .img-box{
+        max-width: 100px;
+        height: 100px;
+        top: 0px;
+    }
+    .project-card .content-details{
+        max-width: 150px;
+    }
+
+    .project-card .content-details p{
+        font-size: 0.5em;
+    }
+    .project-card .content-details h4{
+        font-size: 0.7em;
+    }
 }

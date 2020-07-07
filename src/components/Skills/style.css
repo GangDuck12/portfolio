@@ -141,7 +141,7 @@
 .content-interest{
     position: relative;
     overflow: hidden;
-    height: 20vh;
+    height: 25vh;
     width: 100vw;
     display: table-cell;
     vertical-align: middle;
@@ -187,7 +187,9 @@
 
 
 @media(max-width:1024px){
-    
+    .interest-overlay{
+        height: 16vh;
+    }
 }
 @media(max-width:768px){
     .skills{
@@ -195,10 +197,13 @@
         height: auto;
     }
     .skills h1{
-        padding: 10px 50px;
+        padding: 10px 30px;
         padding-bottom: 20px;
+        font-size: 1.5em;
     }
-
+    .skills h2{
+        font-size: 1em;
+    }
     .skills section{
         padding: 10px;
     }
@@ -214,6 +219,9 @@
     .mainly-details{
         width: 100vw;
     }
+    .mainly-details p{
+        font-size: 0.8em;
+    }
     
     .know-overlay{
         width: 100%;
@@ -222,13 +230,19 @@
     .know-details{
         width: 100vw;
     }
+    .know-details p{
+        font-size: 0.8em;
+    }
 
     .interest-overlay{
         width: 100%;
+        /* height: 20vh; */
     }
     .interest-details{
         width: 100vw;
     }
 
-
+    .interest-details ul li{
+        font-size: 0.8em;
+    }
 }

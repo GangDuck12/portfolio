@@ -182,10 +182,11 @@
 @media(max-width:768px){
     .home{
         padding-top: 96px;
-        height: 100vh;
+        height: 100vh\;
     }
     .profile{
         width: 100vw;
+        height: 100%;
         background: rgba(0, 0, 0, 0.8);
         text-align: center;
         align-items: center;
@@ -209,7 +210,60 @@
     .stage{
         position: absolute;
         margin-top: 60vh;
-        margin-left: 70vw; 
+        margin-left: 60vw; 
         /* 위치조정 */
+    }
+    .cubespinner div{
+        position: absolute;
+        border: 1px solid #ffffff;
+        width: 5em;
+        height: 5em;
+        background: rgba(240, 240, 240, 0.9);
+        line-height: 200px;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .cubespinner .face1{
+        color: #5f9ea0;
+        -webkit-transform: translateZ(2.5em);
+        -moz-transform: translateZ(2.5em);
+        -ms-transform: translateZ(2.5em);
+        transform: translateZ(2.5em);
+    }
+    .cubespinner .face2{
+        color: #228b22;
+        -webkit-transform: rotateY(90deg) translateZ(2.5em);
+        -moz-transform: rotateY(90deg) translateZ(2.5em);
+        -ms-transform: rotateY(90deg) translateZ(2.5em);
+        transform: rotateY(90deg) translateZ(2.5em);
+    }
+    .cubespinner .face3{
+        color: #0000ff;
+        -webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(2.5em);
+        -moz-transform: rotateY(90deg) rotateX(90deg) translateZ(2.5em);
+        -ms-transform: rotateY(90deg) rotateX(90deg) translateZ(2.5em);
+        transform: rotateY(90deg) rotateX(90deg) translateZ(2.5em);
+    }
+    .cubespinner .face4{
+        color: #ffa600;
+        -webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(2.5em);
+        -moz-transform: rotateY(180deg) rotateZ(90deg) translateZ(2.5em);
+        -ms-transform: rotateY(180deg) rotateZ(90deg) translateZ(2.5em);
+        transform: rotateY(180deg) rotateZ(90deg) translateZ(2.5em);
+    }
+    .cubespinner .face5{
+        color: #ff0000;
+        -webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(2.5em);
+        -moz-transform: rotateY(-90deg) rotateZ(90deg) translateZ(2.5em);
+        -ms-transform: rotateY(-90deg) rotateZ(90deg) translateZ(2.5em);
+        transform: rotateY(-90deg) rotateZ(90deg) translateZ(2.5em);
+    }
+    .cubespinner .face6{
+        color: #2f4f4f;
+        -webkit-transform: rotateX(-90deg) translateZ(2.5em);
+        -moz-transform: rotateX(-90deg) translateZ(2.5em);
+        -ms-transform: rotateX(-90deg) translateZ(2.5em);
+        transform: rotateX(-90deg) translateZ(2.5em);
     }
 }

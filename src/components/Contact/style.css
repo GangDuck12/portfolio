@@ -79,11 +79,30 @@
         padding-top: 96px;
     }
     .contact h1{
-        padding: 10px 50px;
+        padding: 10px 30px;
         padding-bottom: 80px;
+        font-size: 1.5em;
     }
     .contact-overlay{
         width: 100%;
         height: calc(100% - 96px);
+    }
+}
+@media(max-width:425px){
+    .contact section:nth-child(1){
+        width: 0;
+    }
+    .contact section:nth-child(2){
+        width: 100%;
+    }
+    .contact-details h2{
+        font-size: 1em;
+    }
+    .contact-details ul{
+        padding: 3%;
+    }
+
+    .contact-details ul li{
+        font-size: 0.8em;
     }
 }
