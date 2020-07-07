@@ -202,6 +202,9 @@
     .about-details section{
         width: 70vw;
     }
+    .about-details section:nth-child(1) ul{
+        padding: 3%;
+    }
     .about-details h3{
         font-size: 1em;
     }

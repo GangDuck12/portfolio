@@ -17,11 +17,11 @@ const Home = (props) => {
       <div className="stage">
         <div className="cubespinner">
           <div className="face1">Be</div>
-          <div className="face2">Curious</div>
+          <div className="face2">Simple</div>
           <div className="face3">Be</div>
-          <div className="face4">Creative</div>
+          <div className="face4">Symbol</div>
           <div className="face5">Be</div>
-          <div className="face6">Confident</div>
+          <div className="face6">Sure</div>
         </div>
       </div>
         <div className="bottomline"></div>

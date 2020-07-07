@@ -15,7 +15,7 @@ const Contact = (props) => {
         <section></section>
         <section>
           <div className="contact-details">
-            <h2>Thank you for...</h2>
+            <h2>Thank you :)</h2>
               <ul>
                 <li>phone:<span>010.9424.9977</span></li>
                 <li>maill:<span>gangduck12@gmail.com</span></li>

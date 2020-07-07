@@ -14,8 +14,8 @@ function App() {
 
   const [selected_content_id,setSelected_content_id] = useState();
   const [contents,setContents] = useState([
-    {id:1, title:'About', desc:'What I want to do...'},
-    {id:2, title:'Project', desc:'Login page To do list & Cafe Web Design'},
+    {id:1, title:'About', desc:'Me and Portfolio'},
+    {id:2, title:'Project', desc:'3 personal project'},
     {id:3, title:'Skills', desc:'Mainly used & Knowledgeable'},
     {id:4, title:'Contact', desc:'Thank you...'}
   ]);

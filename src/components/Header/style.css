@@ -139,7 +139,7 @@
     font-weight: lighter;
     font-size: 0.7em;
     color: #fff;
-    padding: 0.5em;
+    padding: 0.8em;
     overflow: hidden;
     font-family: 'Noto Sans KR', sans-serif;
 }
@@ -152,7 +152,6 @@
         z-index: 2;
         top: 0;
         background: #1a1a1a;
-        position: fixed;
         height: 96px;
         width: 100vw;
     }
@@ -166,12 +165,17 @@
     .lists{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         border-top: 1px solid #777777;
-        padding: 0 30px;
+        /* padding: 0 30px; */
     }
     .lists li{
         margin: 0;
+        width: 100%;
+    }
+    .lists li a{
+        padding: 0.5em 0;
+        text-align: center;
     }
     .lists li .desc{
         display: none;
