@@ -210,7 +210,7 @@
     .stage{
         position: absolute;
         margin-top: 60vh;
-        margin-left: 60vw; 
+        margin-left: 70vw; 
         /* 위치조정 */
     }
     .cubespinner div{
@@ -265,5 +265,13 @@
         -moz-transform: rotateX(-90deg) translateZ(2.5em);
         -ms-transform: rotateX(-90deg) translateZ(2.5em);
         transform: rotateX(-90deg) translateZ(2.5em);
+    }
+}
+@media(max-width:425px){
+    .stage{
+        position: absolute;
+        margin-top: 60vh;
+        margin-left: 60vw; 
+        /* 위치조정 */
     }
 }
