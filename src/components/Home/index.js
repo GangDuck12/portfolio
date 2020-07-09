@@ -10,9 +10,10 @@ const Home = (props) => {
   return(
     <div className="home">
       <div className="profile">
-        <p>
-          Software developer specialization in Front end developement...
-        </p>
+        <h1>
+          Software developer specialized in Front end developement
+        </h1>
+        <p>신입 프론트엔드 개발자입니다.</p>
       </div>
       <div className="stage">
         <div className="cubespinner">

@@ -42,7 +42,7 @@ const Skills = (props) => {
                     <p>프로젝트들의 버전관리를 위하여 <span>GIT</span>을 사용합니다.</p>
                   </div>
                 </div>
-                  <h2>Knowledgeable</h2>
+                  <h2>Use experience</h2>
                     <img src={GIT}></img>
                     <img src={GITHUB}></img>                
               </div>

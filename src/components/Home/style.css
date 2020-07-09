@@ -8,12 +8,15 @@
 }
 .profile{
     width: calc(100vw - 180px);
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.5);
     text-align: center;
     align-items: center;
     padding-top: 30vh;
 }
-
+.profile h1{
+    color: #ffffff;
+    font-size: 3em;
+}
 .profile p{
     color: #ffffff;
     font-size: 2em;
