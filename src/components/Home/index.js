@@ -13,7 +13,7 @@ const Home = (props) => {
         <h1>
           Software developer specialized in Front end developement
         </h1>
-        <p>신입 프론트엔드 개발자입니다.</p>
+        <p>신입 프론트엔드 개발자<span>강경원</span>입니다.</p>
       </div>
       <div className="stage">
         <div className="cubespinner">
