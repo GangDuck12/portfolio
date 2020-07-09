@@ -16,7 +16,8 @@ const Project = (props) => {
     projectOn: "" ,
     projectImage:"",
     projectText:"",
-    projectSkills:""
+    projectSkills:"",
+    prejectHomepage:""
   });
 
 
@@ -38,18 +39,20 @@ const Project = (props) => {
             return(
               <div key={proj.id}>
                   <div className="project-container">
-                    <h3>{proj.projectTitle}</h3>
-                    <p>{proj.projectOn}</p>
-                    <div className="project-card">
-                      <div className="img-box">
-                        <img src={require(`../../images/${proj.projectImage}`)} alt="Project Image"></img>
-                      </div>
-                        <div className="content-details">
-                          <p>{proj.projectText}</p>
-                          <h4>Project Skills</h4>
-                          <p>{proj.projectSkills}</p>
+                    <a href={proj.projectHomepage} alt="ProjectHomepage">
+                      <h3>{proj.projectTitle}</h3>
+                      <p>{proj.projectOn}</p>
+                      <div className="project-card">
+                        <div className="img-box">
+                          <img src={require(`../../images/${proj.projectImage}`)} alt="Project Image"></img>
                         </div>
-                  </div>
+                          <div className="content-details">
+                            <p>{proj.projectText}</p>
+                            <h4>Project Skills</h4>
+                            <p>{proj.projectSkills}</p>
+                          </div>
+                      </div>
+                    </a>
                   </div>
               </div>
             )
