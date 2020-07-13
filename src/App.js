@@ -5,7 +5,6 @@ import Project from './components/Project';
 import Skills from './components/Skills';
 import About from './components/About';
 import Contact from './components/Contact';
-import { BrowserRouter as Router, Route} from 'react-router-dom';
 import Home from './components/Home';
 
 function App() {
@@ -52,7 +51,6 @@ function App() {
 
   console.log('content',content);
   return (
-    <Router>
       <div className="App">
         <Header 
           data={contents} 
@@ -67,7 +65,6 @@ function App() {
           {content}
         </div>
       </div>
-    </Router>
   );
 }
 

@@ -52,7 +52,9 @@
     flex-wrap: wrap;
     padding: 20px;
 }
-
+.project-container a{
+    text-decoration: none;
+}
 .project-container h3{
     font-family: 'Noto Sans', sans-serif;
     color: #ffffff;
